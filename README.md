@@ -54,7 +54,7 @@ Set selected image and show the RPMultipleImagePicker after the Image Picker Vie
 }
 ```
 
-Take a look at the 'Example' folder for an project example.
+Take a look at the 'Example' folder for an example project.
 
 Maintainers
 ------------
