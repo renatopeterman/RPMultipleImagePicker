@@ -17,8 +17,7 @@
 {
     self = [super initWithNibName:@"RPMultipleImagePicker" bundle:[NSBundle mainBundle]];
     if (self) {
-        //self.sourceType = UIImagePickerControllerSourceTypeCamera;
-        self.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        self.sourceType = UIImagePickerControllerSourceTypeCamera; // Default
         self.images = [NSMutableArray new];
     }
     return self;
