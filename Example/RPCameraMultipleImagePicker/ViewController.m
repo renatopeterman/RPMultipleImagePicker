@@ -50,32 +50,6 @@
 {
     
     NSString *mediaType = [info objectForKey: UIImagePickerControllerMediaType];
-    UIImage *selectedImage;
-    
-    if (CFStringCompare ((CFStringRef) mediaType, kUTTypeImage, 0) == kCFCompareEqualTo) {
-        
-        selectedImage = (UIImage *) [info objectForKey: UIImagePickerControllerOriginalImage];
-        
-        // Add image to RPMultipleImagePickerViewController
-        [self.multipleImagePicker addImage:selectedImage];
-        
-        // RPMultipleImagePicker Done callback
-        self.multipleImagePicker.doneCallback = ^(NSArray *images) {
-            
-            // Get the images
-            
-        };
-        
-        // Show RPMultipleImagePickerViewController
-        [picker pushViewController:self.multipleImagePicker animated:YES];
-        
-    }
-}
-
--(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-    
-    NSString *mediaType = [info objectForKey: UIImagePickerControllerMediaType];
     UIImage *originalImage, *editedImage, *imageToUse;
     
     if (CFStringCompare ((CFStringRef) mediaType, kUTTypeImage, 0) == kCFCompareEqualTo) {
