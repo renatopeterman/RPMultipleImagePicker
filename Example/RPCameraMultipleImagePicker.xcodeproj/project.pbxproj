@@ -7,34 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A02CA19819A2CE5500EEE29C /* RPImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A02CA19419A2CE5500EEE29C /* RPImageCell.m */; };
+		A02CA19919A2CE5500EEE29C /* RPMultipleImagePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = A02CA19519A2CE5500EEE29C /* RPMultipleImagePicker.xib */; };
+		A02CA19A19A2CE5500EEE29C /* RPMultipleImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A02CA19719A2CE5500EEE29C /* RPMultipleImagePickerViewController.m */; };
 		A0317DEB19A13D2B00266F17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0317DEA19A13D2B00266F17 /* Foundation.framework */; };
 		A0317DED19A13D2B00266F17 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0317DEC19A13D2B00266F17 /* CoreGraphics.framework */; };
 		A0317DEF19A13D2B00266F17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0317DEE19A13D2B00266F17 /* UIKit.framework */; };
 		A0317DF519A13D2B00266F17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0317DF319A13D2B00266F17 /* InfoPlist.strings */; };
 		A0317DF719A13D2B00266F17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0317DF619A13D2B00266F17 /* main.m */; };
 		A0317DFB19A13D2B00266F17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0317DFA19A13D2B00266F17 /* AppDelegate.m */; };
-		A0317DFE19A13D2B00266F17 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0317DFC19A13D2B00266F17 /* Main_iPhone.storyboard */; };
-		A0317E0119A13D2B00266F17 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0317DFF19A13D2B00266F17 /* Main_iPad.storyboard */; };
+		A0317DFE19A13D2B00266F17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0317DFC19A13D2B00266F17 /* Main.storyboard */; };
 		A0317E0419A13D2B00266F17 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0317E0319A13D2B00266F17 /* ViewController.m */; };
 		A0317E0619A13D2B00266F17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0317E0519A13D2B00266F17 /* Images.xcassets */; };
-		A0317E0D19A13D2B00266F17 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0317E0C19A13D2B00266F17 /* XCTest.framework */; };
-		A0317E0E19A13D2B00266F17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0317DEA19A13D2B00266F17 /* Foundation.framework */; };
-		A0317E0F19A13D2B00266F17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0317DEE19A13D2B00266F17 /* UIKit.framework */; };
-		A0317E1719A13D2B00266F17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0317E1519A13D2B00266F17 /* InfoPlist.strings */; };
-		A0317E1919A13D2B00266F17 /* RPCameraMultipleImagePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0317E1819A13D2B00266F17 /* RPCameraMultipleImagePickerTests.m */; };
+		A0317E2B19A140E100266F17 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0317E2D19A140E100266F17 /* Localizable.strings */; };
+		A0317E3819A146D200266F17 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0317E3719A146D200266F17 /* QuartzCore.framework */; };
+		A0317E3A19A146F100266F17 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0317E3919A146F100266F17 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A0317E1019A13D2B00266F17 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0317DDF19A13D2B00266F17 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A0317DE619A13D2B00266F17;
-			remoteInfo = RPCameraMultipleImagePicker;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		A02CA19319A2CE5500EEE29C /* RPImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPImageCell.h; path = ../../Classes/RPImageCell.h; sourceTree = "<group>"; };
+		A02CA19419A2CE5500EEE29C /* RPImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPImageCell.m; path = ../../Classes/RPImageCell.m; sourceTree = "<group>"; };
+		A02CA19519A2CE5500EEE29C /* RPMultipleImagePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RPMultipleImagePicker.xib; path = ../../Classes/RPMultipleImagePicker.xib; sourceTree = "<group>"; };
+		A02CA19619A2CE5500EEE29C /* RPMultipleImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPMultipleImagePickerViewController.h; path = ../../Classes/RPMultipleImagePickerViewController.h; sourceTree = "<group>"; };
+		A02CA19719A2CE5500EEE29C /* RPMultipleImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPMultipleImagePickerViewController.m; path = ../../Classes/RPMultipleImagePickerViewController.m; sourceTree = "<group>"; };
 		A0317DE719A13D2B00266F17 /* RPCameraMultipleImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPCameraMultipleImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0317DEA19A13D2B00266F17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A0317DEC19A13D2B00266F17 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,16 +40,18 @@
 		A0317DF819A13D2B00266F17 /* RPCameraMultipleImagePicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RPCameraMultipleImagePicker-Prefix.pch"; sourceTree = "<group>"; };
 		A0317DF919A13D2B00266F17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A0317DFA19A13D2B00266F17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A0317DFD19A13D2B00266F17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		A0317E0019A13D2B00266F17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		A0317DFD19A13D2B00266F17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0317E0219A13D2B00266F17 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A0317E0319A13D2B00266F17 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A0317E0519A13D2B00266F17 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A0317E0B19A13D2B00266F17 /* RPCameraMultipleImagePickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPCameraMultipleImagePickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0317E0C19A13D2B00266F17 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		A0317E1419A13D2B00266F17 /* RPCameraMultipleImagePickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RPCameraMultipleImagePickerTests-Info.plist"; sourceTree = "<group>"; };
-		A0317E1619A13D2B00266F17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A0317E1819A13D2B00266F17 /* RPCameraMultipleImagePickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPCameraMultipleImagePickerTests.m; sourceTree = "<group>"; };
+		A0317E2C19A140E100266F17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A0317E2E19A140E600266F17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A0317E2F19A1420200266F17 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Main.strings; sourceTree = "<group>"; };
+		A0317E3119A1420200266F17 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A0317E3219A1420200266F17 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A0317E3719A146D200266F17 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A0317E3919A146F100266F17 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,30 +59,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0317E3A19A146F100266F17 /* MobileCoreServices.framework in Frameworks */,
+				A0317E3819A146D200266F17 /* QuartzCore.framework in Frameworks */,
 				A0317DED19A13D2B00266F17 /* CoreGraphics.framework in Frameworks */,
 				A0317DEF19A13D2B00266F17 /* UIKit.framework in Frameworks */,
 				A0317DEB19A13D2B00266F17 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0317E0819A13D2B00266F17 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A0317E0D19A13D2B00266F17 /* XCTest.framework in Frameworks */,
-				A0317E0F19A13D2B00266F17 /* UIKit.framework in Frameworks */,
-				A0317E0E19A13D2B00266F17 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A02CA19019A2C37500EEE29C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A0317DFC19A13D2B00266F17 /* Main.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		A02CA19219A2CE1B00EEE29C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0317E0219A13D2B00266F17 /* ViewController.h */,
+				A0317E0319A13D2B00266F17 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		A0317DDE19A13D2B00266F17 = {
 			isa = PBXGroup;
 			children = (
 				A0317DF019A13D2B00266F17 /* RPCameraMultipleImagePicker */,
-				A0317E1219A13D2B00266F17 /* RPCameraMultipleImagePickerTests */,
 				A0317DE919A13D2B00266F17 /* Frameworks */,
 				A0317DE819A13D2B00266F17 /* Products */,
 			);
@@ -95,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				A0317DE719A13D2B00266F17 /* RPCameraMultipleImagePicker.app */,
-				A0317E0B19A13D2B00266F17 /* RPCameraMultipleImagePickerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +107,8 @@
 		A0317DE919A13D2B00266F17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0317E3919A146F100266F17 /* MobileCoreServices.framework */,
+				A0317E3719A146D200266F17 /* QuartzCore.framework */,
 				A0317DEA19A13D2B00266F17 /* Foundation.framework */,
 				A0317DEC19A13D2B00266F17 /* CoreGraphics.framework */,
 				A0317DEE19A13D2B00266F17 /* UIKit.framework */,
@@ -114,12 +120,11 @@
 		A0317DF019A13D2B00266F17 /* RPCameraMultipleImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				A0317E2819A13E7A00266F17 /* Classes */,
+				A02CA19019A2C37500EEE29C /* UI */,
+				A02CA19219A2CE1B00EEE29C /* Controller */,
 				A0317DF919A13D2B00266F17 /* AppDelegate.h */,
 				A0317DFA19A13D2B00266F17 /* AppDelegate.m */,
-				A0317DFC19A13D2B00266F17 /* Main_iPhone.storyboard */,
-				A0317DFF19A13D2B00266F17 /* Main_iPad.storyboard */,
-				A0317E0219A13D2B00266F17 /* ViewController.h */,
-				A0317E0319A13D2B00266F17 /* ViewController.m */,
 				A0317E0519A13D2B00266F17 /* Images.xcassets */,
 				A0317DF119A13D2B00266F17 /* Supporting Files */,
 			);
@@ -133,26 +138,21 @@
 				A0317DF319A13D2B00266F17 /* InfoPlist.strings */,
 				A0317DF619A13D2B00266F17 /* main.m */,
 				A0317DF819A13D2B00266F17 /* RPCameraMultipleImagePicker-Prefix.pch */,
+				A0317E2D19A140E100266F17 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A0317E1219A13D2B00266F17 /* RPCameraMultipleImagePickerTests */ = {
+		A0317E2819A13E7A00266F17 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A0317E1819A13D2B00266F17 /* RPCameraMultipleImagePickerTests.m */,
-				A0317E1319A13D2B00266F17 /* Supporting Files */,
+				A02CA19319A2CE5500EEE29C /* RPImageCell.h */,
+				A02CA19419A2CE5500EEE29C /* RPImageCell.m */,
+				A02CA19519A2CE5500EEE29C /* RPMultipleImagePicker.xib */,
+				A02CA19619A2CE5500EEE29C /* RPMultipleImagePickerViewController.h */,
+				A02CA19719A2CE5500EEE29C /* RPMultipleImagePickerViewController.m */,
 			);
-			path = RPCameraMultipleImagePickerTests;
-			sourceTree = "<group>";
-		};
-		A0317E1319A13D2B00266F17 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A0317E1419A13D2B00266F17 /* RPCameraMultipleImagePickerTests-Info.plist */,
-				A0317E1519A13D2B00266F17 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,24 +175,6 @@
 			productReference = A0317DE719A13D2B00266F17 /* RPCameraMultipleImagePicker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A0317E0A19A13D2B00266F17 /* RPCameraMultipleImagePickerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A0317E1F19A13D2B00266F17 /* Build configuration list for PBXNativeTarget "RPCameraMultipleImagePickerTests" */;
-			buildPhases = (
-				A0317E0719A13D2B00266F17 /* Sources */,
-				A0317E0819A13D2B00266F17 /* Frameworks */,
-				A0317E0919A13D2B00266F17 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A0317E1119A13D2B00266F17 /* PBXTargetDependency */,
-			);
-			name = RPCameraMultipleImagePickerTests;
-			productName = RPCameraMultipleImagePickerTests;
-			productReference = A0317E0B19A13D2B00266F17 /* RPCameraMultipleImagePickerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,11 +183,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Renato Peterman";
-				TargetAttributes = {
-					A0317E0A19A13D2B00266F17 = {
-						TestTargetID = A0317DE619A13D2B00266F17;
-					};
-				};
 			};
 			buildConfigurationList = A0317DE219A13D2B00266F17 /* Build configuration list for PBXProject "RPCameraMultipleImagePicker" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -214,6 +191,7 @@
 			knownRegions = (
 				en,
 				Base,
+				pt,
 			);
 			mainGroup = A0317DDE19A13D2B00266F17;
 			productRefGroup = A0317DE819A13D2B00266F17 /* Products */;
@@ -221,7 +199,6 @@
 			projectRoot = "";
 			targets = (
 				A0317DE619A13D2B00266F17 /* RPCameraMultipleImagePicker */,
-				A0317E0A19A13D2B00266F17 /* RPCameraMultipleImagePickerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,18 +208,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0317E0119A13D2B00266F17 /* Main_iPad.storyboard in Resources */,
+				A0317E2B19A140E100266F17 /* Localizable.strings in Resources */,
+				A02CA19919A2CE5500EEE29C /* RPMultipleImagePicker.xib in Resources */,
 				A0317E0619A13D2B00266F17 /* Images.xcassets in Resources */,
-				A0317DFE19A13D2B00266F17 /* Main_iPhone.storyboard in Resources */,
+				A0317DFE19A13D2B00266F17 /* Main.storyboard in Resources */,
 				A0317DF519A13D2B00266F17 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0317E0919A13D2B00266F17 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A0317E1719A13D2B00266F17 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,60 +224,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0317E0419A13D2B00266F17 /* ViewController.m in Sources */,
+				A02CA19A19A2CE5500EEE29C /* RPMultipleImagePickerViewController.m in Sources */,
+				A02CA19819A2CE5500EEE29C /* RPImageCell.m in Sources */,
 				A0317DFB19A13D2B00266F17 /* AppDelegate.m in Sources */,
 				A0317DF719A13D2B00266F17 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0317E0719A13D2B00266F17 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A0317E1919A13D2B00266F17 /* RPCameraMultipleImagePickerTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A0317E1119A13D2B00266F17 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A0317DE619A13D2B00266F17 /* RPCameraMultipleImagePicker */;
-			targetProxy = A0317E1019A13D2B00266F17 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A0317DF319A13D2B00266F17 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A0317DF419A13D2B00266F17 /* en */,
+				A0317E3119A1420200266F17 /* pt */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		A0317DFC19A13D2B00266F17 /* Main_iPhone.storyboard */ = {
+		A0317DFC19A13D2B00266F17 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A0317DFD19A13D2B00266F17 /* Base */,
+				A0317E2F19A1420200266F17 /* pt */,
 			);
-			name = Main_iPhone.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A0317DFF19A13D2B00266F17 /* Main_iPad.storyboard */ = {
+		A0317E2D19A140E100266F17 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A0317E0019A13D2B00266F17 /* Base */,
+				A0317E2C19A140E100266F17 /* en */,
+				A0317E2E19A140E600266F17 /* Base */,
+				A0317E3219A1420200266F17 /* pt */,
 			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		A0317E1519A13D2B00266F17 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A0317E1619A13D2B00266F17 /* en */,
-			);
-			name = InfoPlist.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -393,6 +345,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RPCameraMultipleImagePicker/RPCameraMultipleImagePicker-Prefix.pch";
 				INFOPLIST_FILE = "RPCameraMultipleImagePicker/RPCameraMultipleImagePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -406,48 +359,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RPCameraMultipleImagePicker/RPCameraMultipleImagePicker-Prefix.pch";
 				INFOPLIST_FILE = "RPCameraMultipleImagePicker/RPCameraMultipleImagePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		A0317E2019A13D2B00266F17 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RPCameraMultipleImagePicker.app/RPCameraMultipleImagePicker";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RPCameraMultipleImagePicker/RPCameraMultipleImagePicker-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "RPCameraMultipleImagePickerTests/RPCameraMultipleImagePickerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		A0317E2119A13D2B00266F17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RPCameraMultipleImagePicker.app/RPCameraMultipleImagePicker";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RPCameraMultipleImagePicker/RPCameraMultipleImagePicker-Prefix.pch";
-				INFOPLIST_FILE = "RPCameraMultipleImagePickerTests/RPCameraMultipleImagePickerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -470,14 +384,7 @@
 				A0317E1E19A13D2B00266F17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		A0317E1F19A13D2B00266F17 /* Build configuration list for PBXNativeTarget "RPCameraMultipleImagePickerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A0317E2019A13D2B00266F17 /* Debug */,
-				A0317E2119A13D2B00266F17 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
