@@ -1,14 +1,14 @@
 RPMultipleImagePicker
 =====================
 
-Select multiple images from camera using RPMultipleImagePicker.
+Select multiple images from camera using UIImagePickerController and RPMultipleImagePicker.
 
 ![RPMultipleImagePicker preview](http://www.renatopeterman.com.br/images/github/rpmultipleimagepicker.jpg "Preview")
 
 Requirements
 -----------
 
-* iOS 6.1+* (not tested in iPad)
+* iOS 6.1+* (not tested on iPad)
 * MobileCoreServices.framework
 * QuartzCore.framework
 
