@@ -20,8 +20,8 @@ Include the files from 'Classes' folder in your project.
 Initialize RPMultipleImagePicker and set the source type.
 
 ```objectivec
-self.multipleImagePicker = [[RPMultipleImagePickerViewController alloc] init];
-self.multipleImagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+RPMultipleImagePickerViewController *multipleImagePicker = [[RPMultipleImagePickerViewController alloc] init];
+multipleImagePicker.sourceType = UIImagePickerControllerSourceTypeCamera; // or UIImagePickerControllerSourceTypePhotoLibrary if you are using iPhone emulator
 ```
 
 Set selected image and show the RPMultipleImagePicker after the Image Picker View finish.
