@@ -60,3 +60,8 @@ Maintainers
 ------------
 
 * [Renato Peterman](https://www.renatopeterman.com.br) ([@renatopeterman](https://twitter.com/renatopeterman))
+
+License
+-------
+
+RPMultipleImagePicker is released under the MIT license. See LICENSE for details.
