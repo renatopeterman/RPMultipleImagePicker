@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0702D65E1C61258300B540C4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0702D65D1C61258300B540C4 /* Launch Screen.storyboard */; };
 		A02CA19819A2CE5500EEE29C /* RPImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A02CA19419A2CE5500EEE29C /* RPImageCell.m */; };
 		A02CA19919A2CE5500EEE29C /* RPMultipleImagePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = A02CA19519A2CE5500EEE29C /* RPMultipleImagePicker.xib */; };
 		A02CA19A19A2CE5500EEE29C /* RPMultipleImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A02CA19719A2CE5500EEE29C /* RPMultipleImagePickerViewController.m */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0702D65D1C61258300B540C4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		A02CA19319A2CE5500EEE29C /* RPImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPImageCell.h; path = ../../Classes/RPImageCell.h; sourceTree = "<group>"; };
 		A02CA19419A2CE5500EEE29C /* RPImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPImageCell.m; path = ../../Classes/RPImageCell.m; sourceTree = "<group>"; };
 		A02CA19519A2CE5500EEE29C /* RPMultipleImagePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RPMultipleImagePicker.xib; path = ../../Classes/RPMultipleImagePicker.xib; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				A0317DFC19A13D2B00266F17 /* Main.storyboard */,
+				0702D65D1C61258300B540C4 /* Launch Screen.storyboard */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0702D65E1C61258300B540C4 /* Launch Screen.storyboard in Resources */,
 				A0317E2B19A140E100266F17 /* Localizable.strings in Resources */,
 				A02CA19919A2CE5500EEE29C /* RPMultipleImagePicker.xib in Resources */,
 				A0317E0619A13D2B00266F17 /* Images.xcassets in Resources */,
@@ -341,11 +345,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RPCameraMultipleImagePicker/RPCameraMultipleImagePicker-Prefix.pch";
 				INFOPLIST_FILE = "RPCameraMultipleImagePicker/RPCameraMultipleImagePicker-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -355,11 +358,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RPCameraMultipleImagePicker/RPCameraMultipleImagePicker-Prefix.pch";
 				INFOPLIST_FILE = "RPCameraMultipleImagePicker/RPCameraMultipleImagePicker-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
