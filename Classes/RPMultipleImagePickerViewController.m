@@ -27,11 +27,13 @@
 {
     [super viewWillAppear:animated];
     
-    // Refresh
-    [self setCurrentImage:self.image];
-    [self reloadCollectionView];
-    [self refreshTitle];
-    
+    // UI Updates always in Main Thread
+    dispatch_async(dispatch_get_main_queue(), ^{
+        // Refresh
+        [self setCurrentImage:self.image];
+        [self reloadCollectionView];
+        [self refreshTitle];
+    });
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -44,10 +46,10 @@
     [super viewDidLoad];
     
     // Style
-    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    self.navigationController.navigationBar.barStyle = _useDefaultDesign ? UIBarStyleDefault : UIBarStyleBlack;
     
     // Background
-    self.view.backgroundColor = [UIColor darkGrayColor];
+    self.view.backgroundColor = _useDefaultDesign ? [UIColor whiteColor] : [UIColor darkGrayColor];
     
     [self.collectionView registerClass:[RPImageCell class] forCellWithReuseIdentifier:@"RPImageCell"];
     
@@ -59,13 +61,12 @@
     [self.bgView.layer insertSublayer:gradient atIndex:0];
     
     // Background view for images collection
-    self.bgView.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.bgView.layer.shadowColor = _useDefaultDesign ? [UIColor lightGrayColor].CGColor : [UIColor blackColor].CGColor;
     self.bgView.layer.shadowRadius = 3.0f;
-    self.bgView.layer.shadowOpacity = 0.15f;
     
     // Customize default ImageView
     self.imageView.layer.masksToBounds = true;
-    self.imageView.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.imageView.layer.shadowColor = _useDefaultDesign ? [UIColor lightGrayColor].CGColor : [UIColor blackColor].CGColor;
     self.imageView.layer.shadowOpacity = 0.3f;
     self.imageView.layer.shadowRadius = 6.0f;
     
@@ -76,7 +77,16 @@
     
     // Bt Remover
     self.btRemover.backgroundColor = [UIColor whiteColor];
-    self.btRemover.layer.cornerRadius = 15.0f;
+    self.btRemover.layer.cornerRadius = self.btRemover.frame.size.height / 2;
+    
+    if (_useDefaultDesign) {
+        // Remover Button
+        self.btRemover.layer.borderColor = [UIColor lightGrayColor].CGColor;
+        self.btRemover.layer.borderWidth = 1.0f;
+        
+        // CollectionView Design
+        self.collectionView.backgroundColor = [UIColor lightGrayColor];
+    }
     
     // Set buttons to navigation
     UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Cancel", @"Cancel") style:UIBarButtonItemStylePlain target:self action:@selector(cancel)];
@@ -84,7 +94,7 @@
 
     // iOS 7 only
     if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
-        doneButton.tintColor = [UIColor yellowColor];
+        doneButton.tintColor = _useDefaultDesign ? self.view.tintColor : [UIColor yellowColor];
     }
     
     [self.navigationItem setLeftBarButtonItem:cancelButton];
@@ -133,13 +143,13 @@
 - (void) setCurrentImage:(UIImage *) image {
     
     self.imageView.image = image;
-    double heigth = self.imageView.image.size.height * self.imageView.frame.size.width / self.imageView.image.size.width;
+    double heigth = self.imageView.image.size.height * self.imageView.bounds.size.width / self.imageView.image.size.width;
     self.imageView.bounds = CGRectMake(self.imageView.bounds.origin.x, self.imageView.bounds.origin.y, self.imageView.bounds.size.width, heigth);
     
     // Positioning button x
-    double btX = (self.imageView.center.x - (self.imageView.frame.size.width/2)) - 15;
-    double btY = (self.imageView.center.y - (self.imageView.frame.size.height/2)) - 15;
-    self.btRemover.frame = CGRectMake(btX, btY, self.btRemover.frame.size.width, self.btRemover.frame.size.height);
+    double btX = (self.imageView.center.x - (self.imageView.bounds.size.width/2)) - 15;
+    double btY = (self.imageView.center.y - (self.imageView.bounds.size.height/2)) - 15;
+    self.btRemover.frame = CGRectMake(btX, btY, self.btRemover.bounds.size.width, self.btRemover.bounds.size.height);
     
 }
 

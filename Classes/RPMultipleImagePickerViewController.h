@@ -25,6 +25,9 @@ typedef void (^ RPMultipleImagePickerDoneCallback)(NSArray *images);
 @property (nonatomic, readwrite) NSUInteger selectedIndex;
 @property (nonatomic, readwrite) UIImagePickerControllerSourceType sourceType;
 
+// Design
+@property (nonatomic) BOOL useDefaultDesign;
+
 - (void)addImage:(UIImage*)image;
 - (IBAction)remove:(id)sender;
 

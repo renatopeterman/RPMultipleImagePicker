@@ -29,6 +29,8 @@
     // RPMultipleImagePickerViewController initialization
     self.multipleImagePicker = [[RPMultipleImagePickerViewController alloc] init];
     self.multipleImagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    self.multipleImagePicker.useDefaultDesign = true;
+    
     
     // UIImagePickerController initialization
     UIImagePickerController *controller = [[UIImagePickerController alloc] init];
