@@ -9,6 +9,8 @@
 
 @interface RPMultipleImagePickerViewController ()
 
+@property (strong, nonatomic) NSIndexPath *selectedIndexPathFromDragAndDrop;
+
 @end
 
 @implementation RPMultipleImagePickerViewController
@@ -42,6 +44,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc]
+                                               initWithTarget:self
+                                               action:@selector(handleLongPress:)];
+    longPress.minimumPressDuration = 0.5;
+    [self.collectionView addGestureRecognizer:longPress];
     
     // Style
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
@@ -112,6 +120,55 @@
     [super didReceiveMemoryWarning];
 }
 
+-  (void)handleLongPress:(UILongPressGestureRecognizer*)sender {
+    
+    CGPoint selectedPoint = [sender locationInView:self.collectionView];
+    
+    switch (sender.state) {
+        case UIGestureRecognizerStateBegan:
+            
+            self.selectedIndexPathFromDragAndDrop = [self.collectionView indexPathForItemAtPoint:selectedPoint];
+            
+            // Only if there are more than 2 images (whatsapp like behaviour)
+            if (self.selectedIndexPathFromDragAndDrop.row != 0 && self.images.count > 1) {
+                [self.collectionView beginInteractiveMovementForItemAtIndexPath:self.selectedIndexPathFromDragAndDrop];
+            }
+            
+            break;
+        case UIGestureRecognizerStateChanged:
+            // Only if there are more than 1 image (whatsapp like behaviour)
+            if (self.selectedIndexPathFromDragAndDrop.row != 0 && selectedPoint.y > 0.0f && self.images.count > 1) {
+                [self.collectionView updateInteractiveMovementTargetPosition:selectedPoint];
+            }
+            else if (self.images.count > 1) {
+                [self.collectionView endInteractiveMovement];
+                
+                // Disable Gesture for deleting and refreshing tables
+                sender.enabled = NO;
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self.images removeObjectAtIndex:self.selectedIndexPathFromDragAndDrop.row - 1];
+                    [self reloadCollectionView];
+                    [self selectLastImage];
+                    // Set Last Image to big picture
+                    [self setCurrentImage:self.images[self.selectedIndex - 1]];
+                });
+            }
+            
+            // Enable Gesture Recognizer after disabling it for furter usage
+            sender.enabled = YES;
+            break;
+        case UIGestureRecognizerStateEnded:
+            [self.collectionView endInteractiveMovement];
+            break;
+        default:
+            [self.collectionView cancelInteractiveMovement];
+            break;
+    }
+
+    
+
+}
+
 #pragma mark - Util
 
 - (void) addImage:(UIImage *)image
@@ -176,6 +233,18 @@
 }
 
 #pragma mark - Collection view delegate
+
+- (BOOL)collectionView:(UICollectionView *)collectionView canMoveItemAtIndexPath:(NSIndexPath *)indexPath {
+
+    return indexPath.row != 0;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView moveItemAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
+    
+    UIImage *tempImage = self.images[sourceIndexPath.row - 1];
+    self.images[sourceIndexPath.row - 1] = self.images[destinationIndexPath.row - 1];
+    self.images[destinationIndexPath.row - 1] = tempImage;
+}
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {

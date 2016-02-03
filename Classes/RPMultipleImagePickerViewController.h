@@ -12,7 +12,7 @@
 
 typedef void (^ RPMultipleImagePickerDoneCallback)(NSArray *images);
 
-@interface RPMultipleImagePickerViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UINavigationBarDelegate>
+@interface RPMultipleImagePickerViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UINavigationBarDelegate, UIGestureRecognizerDelegate>
 
 @property (nonatomic, copy) RPMultipleImagePickerDoneCallback doneCallback;
 @property (nonatomic, strong) UIImagePickerController *pickerController;
